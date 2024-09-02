@@ -1,99 +1,126 @@
-@page
-@model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]</title>
+    <title>Home page - Spotless_Homes</title>
 
     <!-- Incluye el CDN de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Enlace al archivo CSS -->
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="css/site.css">
+
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Spotless-Homes.ico" alt="logo" style="height: 60px; width: 60px; margin-right: 10px;">
+                    Spotless Homes
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <!-- Contenedor principal -->
     <div class="container">
-        <!-- Sección de introducción actualizada -->
-        <section class="intro-box">
-            <h1 class="intro-title">Welcome to Spotless Homes</h1>
-            <h2 class="intro-subtitle">Your trusted partner in cleaning</h2>
-            <a href="#contact" class="btn-contact">Contact Us</a>
-        </section>
+        <main role="main" class="pb-3">
+            <!-- Sección de introducción -->
+            <section class="intro-box">
+                <h1 class="intro-title">Welcome to Spotless Homes</h1>
+                <h2 class="intro-subtitle">Your trusted partner in cleaning</h2>
+                <a href="#contact" class="btn-contact">Contact Us</a>
+            </section>
 
-        <!-- Sección de misión -->
-        <section class="company-mission">
-            <div class="mission-text">
-                <h2>Our Mission</h2>
-                <p>“To provide reliable and personalized cleaning services for homes and businesses, guaranteeing the satisfaction of our clients and the excellence in our work.”</p>
-                <p>“Transform spaces into clean, safe, and healthy environments, improving the quality of life of our clients.”</p>
-            </div>
-            <div class="mission-image">
-                <img src="~/images/girl-1531575_1280.jpg" alt="Our Mission" />
-            </div>
-        </section>
+            <!-- Sección de misión -->
+            <section class="company-mission">
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p>“To provide reliable and personalized cleaning services for homes and businesses, guaranteeing the satisfaction of our clients and the excellence in our work.”</p>
+                    <p>“Transform spaces into clean, safe, and healthy environments, improving the quality of life of our clients.”</p>
+                </div>
+                <div class="mission-image">
+                    <img src="images/girl-1531575_1280.jpg" alt="Our Mission" />
+                </div>
+            </section>
 
-        <!-- Sección de servicios -->
-        <section class="services-section">
-            <h2 class="section-title">Our Main Services</h2>
-            <div class="services-container">
-                <!-- Tarjetas de servicio -->
-                <div class="service-card">
-                    <img src="~/images/dirt-6752127_1280.jpg" alt="House Cleaning" class="service-image" />
-                    <div class="service-content">
-                        <h3 class="service-title">House Cleaning</h3>
-                        <p class="service-description">Thorough and regular cleaning to keep your home spotless and comfortable. Our team ensures every corner of your house is cleaned to perfection.</p>
-                        <a href="#contact" class="btn-service">Request Service</a>
+            <!-- Sección de servicios -->
+            <section class="services-section">
+                <h2 class="section-title">Our Main Services</h2>
+                <div class="services-container">
+                    <!-- Tarjeta de House Cleaning -->
+                    <div class="service-card">
+                        <img src="images/dirt-6752127_1280.jpg" alt="House Cleaning" class="service-image" />
+                        <div class="service-content">
+                            <h3 class="service-title">House Cleaning</h3>
+                            <p class="service-description">Thorough and regular cleaning to keep your home spotless and comfortable. Our team ensures every corner of your house is cleaned to perfection.</p>
+                            <a href="#contact" class="btn-service">Request Service</a>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de Deep Cleaning -->
+                    <div class="service-card">
+                        <img src="images/deep-cleaning.jpg" alt="Deep Cleaning" class="service-image" />
+                        <div class="service-content">
+                            <h3 class="service-title">Deep Cleaning</h3>
+                            <p class="service-description">Comprehensive cleaning that covers all areas, including hard-to-reach spots. Ideal for spring cleaning or after a renovation.</p>
+                            <a href="#contact" class="btn-service">Request Service</a>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de Office Cleaning -->
+                    <div class="service-card">
+                        <img src="images/office-cleaning.jpg" alt="Office Cleaning" class="service-image" />
+                        <div class="service-content">
+                            <h3 class="service-title">Office Cleaning</h3>
+                            <p class="service-description">Professional cleaning services for offices to ensure a clean and productive work environment.</p>
+                            <a href="#contact" class="btn-service">Request Service</a>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de Windows Cleaning -->
+                    <div class="service-card">
+                        <img src="images/windows-cleaning.jpg" alt="Windows Cleaning" class="service-image" />
+                        <div class="service-content">
+                            <h3 class="service-title">Windows Cleaning</h3>
+                            <p class="service-description">Expert cleaning of windows to make them streak-free and crystal clear. We handle both residential and commercial windows.</p>
+                            <a href="#contact" class="btn-service">Request Service</a>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de Move-In/Move-Out Cleaning -->
+                    <div class="service-card">
+                        <img src="images/move-in-out-cleaning.jpg" alt="Move-In/Move-Out Cleaning" class="service-image" />
+                        <div class="service-content">
+                            <h3 class="service-title">Move-In/Move-Out Cleaning</h3>
+                            <p class="service-description">Detailed cleaning for homes or apartments before or after moving. Ensure your new home is clean or leave your old home spotless.</p>
+                            <a href="#contact" class="btn-service">Request Service</a>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de Soft Cleaning -->
+                    <div class="service-card">
+                        <img src="images/soft-cleaning.jpg" alt="Soft Cleaning" class="service-image" />
+                        <div class="service-content">
+                            <h3 class="service-title">Soft Cleaning</h3>
+                            <p class="service-description">Gentle cleaning service for delicate surfaces and materials. Perfect for upholstery and fine fabrics.</p>
+                            <a href="#contact" class="btn-service">Request Service</a>
+                        </div>
                     </div>
                 </div>
-                <div class="service-card">
-                    <img src="~/images/prfundo.jpg" alt="Deep Cleaning" class="service-image" />
-                    <div class="service-content">
-                        <h3 class="service-title">Deep Cleaning</h3>
-                        <p class="service-description">Intensive cleaning services that cover every detail, from top to bottom. Ideal for seasonal cleaning or moving in/out.</p>
-                        <a href="#contact" class="btn-service">Request Service</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="~/images/cleaning-8660309_1280.jpg" alt="Office Cleaning" class="service-image" />
-                    <div class="service-content">
-                        <h3 class="service-title">Office Cleaning</h3>
-                        <p class="service-description">Professional cleaning services designed to keep your office environment fresh, clean, and welcoming for both staff and clients.</p>
-                        <a href="#contact" class="btn-service">Request Service</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="~/images/woman-5928694_1280.jpg" alt="Windows Cleaning" class="service-image" />
-                    <div class="service-content">
-                        <h3 class="service-title">Windows Cleaning</h3>
-                        <p class="service-description">Crystal-clear windows and glass surfaces. We remove smudges and dirt to enhance the view from both inside and outside.</p>
-                        <a href="#contact" class="btn-service">Request Service</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="~/images/fuera.jpg" alt="Moving Up: Move-In and Move-Out Cleaning" class="service-image" />
-                    <div class="service-content">
-                        <h3 class="service-title">Moving Up: Move-In and Move-Out Cleaning</h3>
-                        <p class="service-description">Specialized cleaning services for moving in or out. We ensure your new or previous home is spotless and ready for the next occupant.</p>
-                        <a href="#contact" class="btn-service">Request Service</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="~/images/suave.jpg" alt="Soft Cleaning" class="service-image" />
-                    <div class="service-content">
-                        <h3 class="service-title">Soft Cleaning</h3>
-                        <p class="service-description">Gentle yet effective cleaning for delicate surfaces. Perfect for areas that require a more careful touch to avoid damage.</p>
-                        <a href="#contact" class="btn-service">Request Service</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     </div>
 
     <!-- Fondo animado con figuras circulares -->
@@ -157,18 +184,12 @@
         <button type="submit">Send</button>
     </form>
 
-    <!-- Sección de redes sociales -->
-    <footer>
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/people/Spotless-Homes/61564993267159/" class="social-button">
-                <i class="fab fa-facebook-f"></i>
-            </a>
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            <a href="https://www.instagram.com/spotlesshomesohio/?igsh=Mm9wMDh3cGgwc3l1&utm_source=qr" class="social-button">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-    </footer>
-
+    <!-- Enlace a tu archivo JavaScript -->
+    <script src="js/site.js"></script>
 </body>
 </html>
