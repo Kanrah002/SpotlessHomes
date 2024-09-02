@@ -1,682 +1,149 @@
-/* Estilo global */
 body {
-    font-family: 'Poppins', sans-serif; /* Tipografía unificada */
-    background-color: #f0f8ff;
- 
+    font-family: 'Poppins', sans-serif;
+    color: #333;
 }
 
-/* ... Resto de tu CSS */
-
-
-/* Contenedor principal */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.header {
+    background-color: #f8f9fa;
 }
 
-/* Sección de introducción actualizada */
+.navbar-brand img {
+    height: 60px;
+}
+
 .intro-box {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-out;
     text-align: center;
-    position: relative; /* Para asegurarse de que el fondo animado esté detrás */
-    z-index: 1; /* Para asegurarse de que esté encima del fondo animado */
+    margin-top: 50px;
 }
 
 .intro-title {
-    color: #66aaff;
     font-size: 2.5rem;
-    font-weight: 700;
-    margin: 0;
-    animation: fadeIn 1s ease-out;
+    color: #333;
 }
 
 .intro-subtitle {
-    color: #99ccff;
     font-size: 1.5rem;
-    font-weight: 400;
-    margin: 10px 0;
-    animation: fadeIn 1.2s ease-out;
+    color: #555;
 }
 
 .btn-contact {
-    display: inline-block;
-    background-color: #66aaff;
-    color: white;
+    background-color: #007bff;
+    color: #fff;
     padding: 10px 20px;
-    border-radius: 20px;
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px;
+    font-size: 1rem;
 }
 
-    .btn-contact:hover {
-        background-color: #0056b3;
-        transform: translateY(-5px);
-    }
+.btn-contact:hover {
+    background-color: #0056b3;
+}
 
-/* Sección de misión */
 .company-mission {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 40px 20px;
-    background-color: #e6f2ff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 200px 0 40px 0; /* Aumenta el margen superior para bajar más la sección */
-    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 0;
 }
 
 .mission-text {
-    flex: 1;
-    max-width: 50%;
-    padding-right: 20px;
-    box-sizing: border-box;
+    width: 50%;
 }
 
-    .mission-text h2 {
-        color: #66aaff;
-        font-size: 2rem;
-        margin-bottom: 20px;
-        font-weight: 700;
-        animation: fadeIn 1s ease-out;
-    }
-
-    .mission-text p {
-        color: #333;
-        font-size: 1.1rem;
-        line-height: 1.6;
-        animation: fadeIn 1.2s ease-out;
-    }
-
-.mission-image {
-    flex: 1;
-    max-width: 50%;
-    text-align: right;
-    box-sizing: border-box;
+.mission-image img {
+    width: 100%;
+    height: auto;
 }
 
-    .mission-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        animation: fadeIn 1.4s ease-out;
-    }
-
-/* Sección de servicios */
-/* Sección de servicios */
 .services-section {
-    padding: 40px 20px;
-    background-color: #f8faff; /* Fondo ligero para resaltar las tarjetas */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 60px 0;
+    margin: 50px 0;
 }
 
 .section-title {
-    color: #66aaff;
     text-align: center;
-    font-weight: 700;
-    margin-bottom: 40px;
-    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #007bff;
 }
 
-/* Contenedor de tarjetas de servicio */
 .services-container {
     display: flex;
-    flex-wrap: wrap; /* Ajuste para permitir varias filas de tarjetas */
-    justify-content: center;
-    gap: 20px; /* Espacio entre tarjetas */
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/* Estilo de la tarjeta de servicio */
 .service-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     overflow: hidden;
-    width: calc(33.333% - 20px); /* Tres tarjetas por fila con espacio */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    margin: 15px;
 }
 
-    /* Efecto hover en la tarjeta */
-    .service-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-    }
-
-/* Imagen de la tarjeta */
 .service-image {
     width: 100%;
-    height: 200px; /* Altura fija para que todas las imágenes tengan el mismo tamaño */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    height: 200px;
+    object-fit: cover;
 }
 
-/* Contenido de la tarjeta */
 .service-content {
-    padding: 20px;
-    text-align: center; /* Centrar texto en la tarjeta */
+    padding: 15px;
 }
 
 .service-title {
-    color: #66aaff;
     font-size: 1.5rem;
-    margin: 0;
-    font-weight: 700;
+    color: #007bff;
 }
 
 .service-description {
-    color: #333;
     font-size: 1rem;
-    margin-top: 10px;
+    color: #333;
 }
 
+.btn-service {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
 
-/* Fondo animado con figuras circulares */
+.btn-service:hover {
+    background-color: #0056b3;
+}
+
 .animated-background {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* Para que esté detrás del contenido */
-    pointer-events: none; /* Para que no interfiera con la interacción del usuario */
+    pointer-events: none;
 }
 
 .circle {
     position: absolute;
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: rgba(0, 153, 255, 0.2);
-    animation: float 6s ease-in-out infinite;
+    animation: move 20s linear infinite;
 }
 
-.circle1 {
-    width: 100px;
-    height: 100px;
-    top: 10%;
-    left: 10%;
+.circle1 { width: 100px; height: 100px; top: 10%; left: 10%; }
+.circle2 { width: 150px; height: 150px; top: 30%; left: 50%; }
+.circle3 { width: 200px; height: 200px; top: 70%; left: 20%; }
+.circle4 { width: 80px; height: 80px; top: 40%; left: 80%; }
+.circle5 { width: 120px; height: 120px; top: 60%; left: 10%; }
+.circle6 { width: 140px; height: 140px; top: 20%; left: 60%; }
+.circle7 { width: 160px; height: 160px; top: 80%; left: 30%; }
+.circle8 { width: 110px; height: 110px; top: 30%; left: 70%; }
+.circle9 { width: 130px; height: 130px; top: 50%; left: 40%; }
+.circle10 { width: 170px; height: 170px; top: 10%; left: 40%; }
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
 }
-
-.circle2 {
-    width: 120px;
-    height: 120px;
-    top: 30%;
-    left: 20%;
-}
-
-.circle3 {
-    width: 150px;
-    height: 150px;
-    top: 50%;
-    left: 5%;
-}
-
-.circle4 {
-    width: 80px;
-    height: 80px;
-    top: 70%;
-    left: 50%;
-}
-
-.circle5 {
-    width: 200px;
-    height: 200px;
-    top: 20%;
-    left: 70%;
-}
-
-.circle6 {
-    width: 90px;
-    height: 90px;
-    top: 60%;
-    left: 30%;
-}
-
-.circle7 {
-    width: 160px;
-    height: 160px;
-    top: 40%;
-    left: 80%;
-}
-
-.circle8 {
-    width: 130px;
-    height: 130px;
-    top: 20%;
-    left: 60%;
-}
-
-.circle9 {
-    width: 170px;
-    height: 170px;
-    top: 50%;
-    left: 40%;
-}
-
-.circle10 {
-    width: 190px;
-    height: 190px;
-    top: 80%;
-    left: 60%;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Animaciones para la introducción */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-/* Sección de contacto */
-.contact-section {
-    padding: 40px 20px;
-    background-color: #e6f2ff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 40px 0;
-    text-align: center;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-    .contact-form label {
-        font-size: 1rem;
-        color: #66aaff;
-        margin-bottom: 10px;
-        text-align: left;
-    }
-
-    .contact-form input,
-    .contact-form select,
-    .contact-form textarea {
-        font-size: 1rem;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #dcdcdc;
-        border-radius: 4px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .contact-form textarea {
-        resize: vertical;
-    }
-
-.btn-submit {
-    background-color: #66aaff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 1rem;
-}
-
-    .btn-submit:hover {
-        background-color: #0056b3;
-        transform: translateY(-5px);
-    }
-
-/* Estilo global para dispositivos móviles */
-@media (max-width: 768px) {
-    /* Contenedor principal */
-    .container {
-        padding: 10px;
-    }
-
-    /* Sección de introducción */
-    .intro-box {
-        padding: 20px;
-        box-shadow: none;
-    }
-
-    .intro-title {
-        font-size: 2rem;
-    }
-
-    .intro-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .btn-contact {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    /* Sección de misión */
-    .company-mission {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .mission-text, .mission-image {
-        max-width: 100%;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-        .mission-image img {
-            width: 100%;
-            height: auto;
-        }
-
-    /* Sección de servicios */
-    .services-section {
-        padding: 20px;
-        margin-top: 30px;
-    }
-
-    .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-card {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    /* Sección de contacto */
-    .contact-section {
-        padding: 20px;
-    }
-
-    .contact-form {
-        padding: 0 10px;
-    }
-
-        .contact-form input,
-        .contact-form select,
-        .contact-form textarea {
-            font-size: 0.9rem;
-            padding: 8px;
-        }
-
-    .btn-submit {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-}
-
-/* Estilos para dispositivos muy pequeños */
-@media (max-width: 480px) {
-    .intro-title {
-        font-size: 1.5rem;
-    }
-
-    .intro-subtitle {
-        font-size: 1rem;
-    }
-
-    .btn-contact {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-    }
-
-    .service-title {
-        font-size: 1.2rem;
-    }
-
-    .service-description {
-        font-size: 0.9rem;
-    }
-
-    .contact-form label {
-        font-size: 0.9rem;
-    }
-
-    .contact-form input,
-    .contact-form select,
-    .contact-form textarea {
-        font-size: 0.8rem;
-        padding: 6px;
-    }
-
-    .btn-submit {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-    }
-}
-
-/* Botón de ingreso como administrador */
-.btn-admin {
-    display: inline-block;
-    background-color: #ff6666; /* Color diferente para distinguirlo */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px;
-}
-
-    .btn-admin:hover {
-        background-color: #cc0000;
-        transform: translateY(-5px);
-    }
-
-/* Login Page Styling */
-.login-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f8ff; /* Fondo azul claro */
-}
-
-.login-container {
-    background-color: #ffffff; /* Fondo blanco para el formulario */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-}
-
-.login-title {
-    text-align: center;
-    color: #007bff; /* Azul de la paleta */
-    margin-bottom: 1.5rem;
-    font-family: 'Poppins', sans-serif; /* Utilizando la fuente Poppins */
-    font-size: 24px;
-}
-
-.login-form .form-group {
-    margin-bottom: 1.5rem;
-}
-
-.login-form label {
-    color: #333333; /* Texto oscuro para buena legibilidad */
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: block;
-    font-family: 'Poppins', sans-serif;
-}
-
-.login-form .form-control {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #cccccc; /* Borde gris claro */
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-    .login-form .form-control:focus {
-        border-color: #007bff; /* Azul cuando se enfoca */
-        outline: none;
-    }
-
-.btn-submit {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #007bff; /* Azul de la paleta */
-    color: #ffffff; /* Texto blanco */
-    border: none;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-    .btn-submit:hover {
-        background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
-    }
-
-    .btn-submit:active {
-        background-color: #004494; /* Azul aún más oscuro al hacer clic */
-    }
-/* Estilo del botón dentro de la tarjeta de servicio */
-.btn-service {
-    display: inline-block;
-    background-color: #66aaff; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 8px 16px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 10px; /* Espacio arriba del botón */
-}
-
-    .btn-service:hover {
-        background-color: #0056b3; /* Color de fondo cuando se pasa el ratón */
-        transform: translateY(-3px); /* Efecto de elevación al pasar el ratón */
-    }
-
-
-/* Estilo general del formulario */
-form {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
-    margin: 20px auto;
-    font-family: 'Poppins', sans-serif;
-}
-
-    /* Estilo para las etiquetas */
-    form label {
-        display: block;
-        margin-bottom: 15px;
-        font-size: 1rem;
-        color: #66aaff;
-        font-weight: 500;
-    }
-
-    /* Estilo para los campos de entrada */
-    form input[type="email"],
-    form input[type="text"],
-    form input[type="number"],
-    form textarea,
-    form select {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        border: 1px solid #dcdcdc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        font-size: 1rem;
-        color: #333;
-    }
-
-    form textarea {
-        resize: vertical;
-        min-height: 150px;
-    }
-
-    form select {
-        background-color: #f9f9f9;
-    }
-
-    /* Estilo para los botones */
-    form button {
-        display: inline-block;
-        background-color: #66aaff;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 1rem;
-        font-weight: 500;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-        form button:hover {
-            background-color: #0056b3;
-            transform: translateY(-5px);
-        }
-
-    /* Estilo para el estado deshabilitado del select */
-    form select[disabled] {
-        background-color: #e6e6e6;
-        color: #999;
-    }
-
-    /* Estilo para la opción predeterminada del select */
-    form option:disabled {
-        color: #999;
-    }
-.social-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-button {
-    font-size: 1.5rem;
-    color: #fff;
-    background-color: #007bff;
-    padding: 10px;
-    border-radius: 50%;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-
-    .social-button:hover {
-        background-color: #0056b3;
-    }
